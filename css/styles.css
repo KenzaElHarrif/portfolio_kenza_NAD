@@ -1,0 +1,537 @@
+:root{
+    --rosePink: #FB76CF;
+    --darkGray: #555555;
+    --seasalt: #f8f8f8;
+    --wisteria: #ca82e0;
+    --sunset: #fac485;
+
+}
+
+*{
+    font-family: work sans;
+    color: var(--darkGray);
+    /*overflow-x: hidden;*/
+}
+
+
+
+body{
+    background-color: var(--seasalt);
+}
+
+/*MENU*/
+header{
+    margin: none;
+    width: 100%;
+    font-weight: 600;
+}
+nav{
+    z-index: 99;
+    font-size: 20px;
+    width: 100vw;
+    margin: none;
+    
+}
+
+.bg-nav{
+    border: 1px solid;
+    border-bottom-color: var(--darkGray);
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: -1px;
+    width: 150%;
+    height: 100%;
+    object-fit: cover;
+    background-color: var(--seasalt);
+}
+
+.navbar-brand{
+    color: var(--darkGray);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.nav-link:hover{
+    color: var(--rosePink);
+}
+
+
+section{
+    margin-top: 2%;
+    position: relative;
+    max-width: 99%;
+}
+
+section.hero{
+    height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: none;
+}
+
+div.rond{
+    position:absolute;
+    right: 1%;
+    width: 50%;
+    height: 90%;
+    background-image: url(../assets/images/ROND1.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+}
+
+svg.down{
+    display: block;
+    position: absolute; /* or relative */
+    left: 50%;
+    top: 50%;
+    width: 40%;
+}
+
+svg.title-black{
+    display: block;
+    position: absolute; /* or relative */
+    left: 50%;
+    width: 40%;
+    top: 50%;
+    opacity: 1;
+}
+.photo-moi{
+    border-radius: 30px;
+    margin-left: 1em;
+    width: 90%;
+    height: 85%;
+    object-fit: cover;
+    box-shadow: 
+    0px 0px var(--seasalt),
+    0px 0px var(--darkGray),
+    0px 0px var(--seasalt),
+    0px 0px var(--darkGray),
+    0px 0px var(--seasalt),
+    0px 0px var(--darkGray);
+}
+.prenom-nom{
+    /*display: none;*/
+    position: relative;
+    font-size: 2em;
+    font-weight: 600;
+    left: 29.61%;
+    bottom:-275px;
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+.navbar button.navbar-toggler:hover {
+    color: var(--rosePink);
+  }
+
+/*CARDS*/
+
+.competence-row{
+    margin: 0px;
+    width: 100%;
+}
+
+.card-row{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+
+.card{
+    margin: 15px;
+    position: relative;
+    border-radius: 20px;
+    width: 100%;
+    height: 40vh;
+    border: none;
+    overflow: hidden;
+    background-color: transparent;
+    transition-duration:0.5s;
+    border:3px solid var(--darkGray);
+}
+
+.card-title{
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    position: absolute;
+    top: 10%;
+    transition-duration:0.5s;
+    pointer-events: none;
+}
+
+.card-text{
+    width: 100%;
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 30%;
+    transition-duration:0.5s;
+    padding: 70px;
+    pointer-events: none;
+}
+
+.card:hover{
+    box-shadow: 5px 5px var(--seasalt), 7px 7px var(--darkGray), 10px 10px var(--seasalt), 12px 12px var(--darkGray), 15px 15px var(--seasalt), 17px 17px var(--darkGray);
+    transform: translateY(-10px);
+    transition-duration:0.5s;
+}
+
+.card:hover .card-text{
+    opacity: 0;
+}
+.card:hover .card-title{
+    opacity: 0;
+}
+
+
+.img-fluid{
+    border-radius: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(7px) brightness(80%);
+    
+    transition-duration:0.5s;
+}
+
+.img-fluid:hover{
+    filter: blur(0) brightness(100%);
+}
+.align-competences{
+ text-align: center;
+}
+
+.competence-img{
+    margin-top: 10px;
+    height: 90px;
+}
+
+.adobe, .touch{
+    height: 70px;
+}
+
+h1{
+    margin-bottom: 50px;
+    margin-top: 100px;
+    font-size: 70px;
+    font-weight: 600;
+    color: var(--seasalt);
+    -webkit-text-stroke: 2px var(--darkGray);
+    font-stretch: 0%;
+}
+
+.outline{
+    -webkit-text-stroke: 0.04em var(--darkGray);
+  paint-order: stroke fill;
+}
+
+.titre-competences{
+    margin-right:24px;
+    text-align: right;
+}
+.titre-apropos{
+    margin-top:20px;
+}
+
+.titre-contact{
+    margin-top:100px;
+}
+
+.contact-row{
+    text-align: center;
+}
+
+.titre-projets{
+    margin-left:24px;
+}
+
+.text-presentation{
+    font-size: 1.6em;
+    line-height: 35px;
+    margin: 20px;
+}
+
+.competence{
+    padding:30px;
+    margin-top: 30px;
+}
+
+i{
+    font-size: 55px;
+}
+
+
+
+.contact-row {
+    text-align: center; /* Center align text */
+}
+
+.div-linked,
+.div-insta {
+    margin-top: 20px;
+    width: 100px;
+    display: flex; /* Use flexbox to center icons */
+    justify-content: center; /* Center the icon */
+    align-items: center; /* Align vertically */
+    height: 100%; /* Allow columns to take full height */
+}
+
+span{
+    color: var(--wisteria);
+    font-weight: bolder;
+}
+
+footer{
+    margin-top: 100px;
+    margin-bottom:70px;
+    text-align: center;
+    color: var(--rosePink);
+    opacity: 0.5;
+}
+
+.bg-rond1{
+    z-index: -10;
+    width: 50%;
+    top: 85em;
+    left: 0;
+    position: absolute;
+}
+
+.bg-rond2{
+    height: 150%;
+    z-index: -10;
+    right: 0;
+    top: 220em;
+    position: absolute;
+}
+
+
+/*--OEUVRES--*/
+
+.titre-oeuvre{
+    font-size: 100px;
+    margin-top:80px;
+    margin-bottom: 30px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*--SWIPER--*/
+
+.swiper {
+    margin-top: 74px;
+    width:101%;
+    height: 92vh;
+  }
+
+  .swiper-button-next{
+    color: var(--rosePink);
+    position: absolute;
+    right:5%;
+  }
+  .swiper-button-prev{
+    color: var(--rosePink);
+    position: absolute;
+    left:5%;
+  }
+
+  .swiper-pagination-bullet-active{
+    background-color:var(--rosePink);
+  }
+
+  .swiper-slide img {
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+  }
+
+  .description_oeuvre{
+    text-align: center;
+    line-height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .liste-equipe{
+    font-size: 1.2em;
+  }
+
+  .equipe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .description-longue-oeuvre{
+    font-size:1.2em;
+  }
+
+  .titre-desc-oeuvre{
+    font-size: 2.5em;
+    margin-top: 70px;
+    margin-bottom: 10px;
+  }
+
+  .description-rapide-oeuvre{
+    font-size: 1.9em;
+  }
+
+  .link-oeuvre{
+    color: var(--wisteria);
+  }
+
+  b{
+    color: var(--wisteria);
+  }
+
+  .date-oeuvre{
+    font-size: 1.2em;
+    color: var(--wisteria);
+    font-weight: 500;
+  }
+
+  .gsap{
+    height: 70px;
+  }
+
+  .procreate{
+    height: 70px;
+  }
+
+  .sass{
+    height: 80px;
+  }
+
+  .image-processes-oeuvre{
+    width: 500px;
+    margin:5px;
+  }
+
+  .processus{
+    display: flex;
+    justify-content: center;
+    
+    flex-wrap: wrap;
+  }
+
+  .video-hero{
+    margin-top: 36px;
+    width: 101%;
+    height: 92vh;
+  }
+
+  .processus-rupture-img{
+    width: 100%;
+  }
+
+  iframe{
+    width: 100%;
+    height: 50vh;
+  }
+
+  .etape{
+    margin-top: 70px;
+  }
+
+  .sous-titre-process{
+    color: var(--rosePink);
+  }
+
+  .text-processus-rupture{
+    font-size: 1.2em;
+  }
+
+@media screen and (max-width: 1024px){
+    h1{
+        font-size: 70px;
+        text-align: center;
+    }
+
+    .titre-competences{
+        text-align: center;
+        margin-right:0;
+    }
+   
+    .text-presentation{
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    .titre-projets{
+        margin-left:0;
+    }
+    .conteneur-text{
+        width: 100%;
+    }
+    .photo-moi{
+        margin: 0 auto;
+        width: 70%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .bg-rond1{
+        top: 70em;
+        left: -2em;
+    }
+
+    .bg-rond2{
+        top: 350em;
+    }
+    h1{
+        font-size: 50px;
+    }
+    
+    .conteneur-text{
+        margin:none;
+        width: 100%;
+    }
+    
+    .prenom-nom{
+        font-size: 1.5em;
+        bottom:-210px;
+    }
+
+    .swiper-button-next{
+        display: none;
+      }
+      .swiper-button-prev{
+        display: none;
+      }
+
+      .image-processes-oeuvre{
+        width: 400px;
+        margin:5px;
+      }
+
+      .titre-oeuvre{
+        font-size: 70px;
+    }
+}
+
+@media screen and (max-width: 425px){
+
+    .prenom-nom{
+        /*display: none;*/
+        font-size: 1em;
+    }
+}
