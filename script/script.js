@@ -1,4 +1,36 @@
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);  
+  
+document.querySelectorAll(".open-modal").forEach(button => {
+  button.onclick = function() {
+    var targetId = this.getAttribute("data-target");
+    var modal = document.getElementById(targetId);
+    if (modal) {
+      modal.style.display = "block";
+    }
+  };
+});
+
+// Sélectionne tous les boutons qui ferment une modale
+document.querySelectorAll(".close").forEach(button => {
+  button.onclick = function() {
+    var targetId = this.getAttribute("data-target");
+    var modal = document.getElementById(targetId);
+    if (modal) {
+      modal.style.display = "none";
+    }
+  };
+});
+
+// Ferme la modale si l'utilisateur clique à l'extérieur
+window.onclick = function(event) {
+  document.querySelectorAll(".modal").forEach(modal => {
+    if (event.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+};
+
+
 
 var swiper = new Swiper(".mySwiper", {
       slidesPerView: 1,
@@ -121,3 +153,4 @@ gsap.fromTo(card,{opacity:0} ,{
     duration:0.5
   });
   
+

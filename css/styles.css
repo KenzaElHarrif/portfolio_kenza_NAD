@@ -213,7 +213,7 @@ svg.title-black{
     filter: blur(0) brightness(100%);
 }
 .align-competences{
- text-align: center;
+ margin-bottom: 16px;
 }
 
 .competence-img{
@@ -325,9 +325,8 @@ footer{
 
 .titre-oeuvre{
     font-size: 100px;
-    margin-top:80px;
-    margin-bottom: 30px;
     text-align: center;
+    margin-top: 0;
     margin-left: auto;
     margin-right: auto;
 }
@@ -335,24 +334,22 @@ footer{
 /*--SWIPER--*/
 
 .swiper {
-    margin-top: 74px;
-    width:101%;
-    height: 92vh;
+    width:100%;
   }
 
   .swiper-button-next{
-    color: var(--rosePink);
+    color: var(--wisteria);
     position: absolute;
     right:5%;
   }
   .swiper-button-prev{
-    color: var(--rosePink);
+    color: var(--wisteria);
     position: absolute;
     left:5%;
   }
 
   .swiper-pagination-bullet-active{
-    background-color:var(--rosePink);
+    background-color:var(--wisteria);
   }
 
   .swiper-slide img {
@@ -362,30 +359,20 @@ footer{
   }
 
   .description_oeuvre{
-    text-align: center;
     line-height: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
   .liste-equipe{
     font-size: 1.2em;
   }
 
-  .equipe{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
 
   .description-longue-oeuvre{
     font-size:1.2em;
   }
 
   .titre-desc-oeuvre{
-    font-size: 2.5em;
-    margin-top: 70px;
+    font-size: 2em;
     margin-bottom: 10px;
   }
 
@@ -432,9 +419,7 @@ footer{
   }
 
   .video-hero{
-    margin-top: 36px;
-    width: 101%;
-    height: 92vh;
+    width: 100%;
   }
 
   .processus-rupture-img{
@@ -457,6 +442,53 @@ footer{
   .text-processus-rupture{
     font-size: 1.2em;
   }
+
+    /*.close{
+    width: 5%;
+    font-size: 50px;
+    border: none;
+    color: var(--rosePink);
+    background-color: white;
+  }*/
+
+  .modal-header, .modal-content{
+    border: none;
+  }
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  .modal-content {
+    background-color: var(--seasalt);
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+
+  .close{
+    color: #aaa;
+    text-align: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 @media screen and (max-width: 1024px){
     h1{
