@@ -420,15 +420,11 @@ footer{
 
   .video-hero{
     width: 100%;
+    height: 60vh;
   }
 
   .processus-rupture-img{
     width: 100%;
-  }
-
-  iframe{
-    width: 100%;
-    height: 50vh;
   }
 
   .etape{
@@ -442,14 +438,6 @@ footer{
   .text-processus-rupture{
     font-size: 1.2em;
   }
-
-    /*.close{
-    width: 5%;
-    font-size: 50px;
-    border: none;
-    color: var(--rosePink);
-    background-color: white;
-  }*/
 
   .modal-header, .modal-content{
     border: none;
