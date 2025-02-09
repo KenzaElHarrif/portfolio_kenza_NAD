@@ -478,6 +478,12 @@ footer{
   cursor: pointer;
 }
 
+.game{
+  font-size: 1em;
+  font-weight: bold;
+  color: var(--wisteria);
+}
+
 @media screen and (max-width: 1024px){
     h1{
         font-size: 70px;
